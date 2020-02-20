@@ -1,0 +1,460 @@
+/*
+Shweta Nazarkar
+823812620
+CS 545
+CSS Assigment 3 Registration form Example
+*/
+
+body {
+    font-size: 14pt;
+    background-color: #ffffff;
+    color: #36342d;
+    font-family: Arial, san-serif;
+    margin: 0px;
+}
+
+article {
+    margin: 30px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0px 20px;
+}
+
+/* new style for registration form elements*/
+.registration-elements {
+    background-color: white !important;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.registration-elements.h2 {
+    text-align:center;
+}
+
+.registration-elements.eventoptions {
+    width: 50%;
+}
+.registration-elements p {
+    font-size: 18pt;
+}
+
+.input-contain[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.input-contain {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color:#000000
+}
+
+.input-submit {
+    width: 50%;
+    background-color: #d9bd1c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-submit:hover {
+        background-color: #36342d;
+}
+.newsletter-checkbox {
+    width: 50%;
+    margin: 8px 0;
+    text-align: left !important;
+    font-size: initial;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.attendees {
+    text-align:center;
+}
+
+.input-age {
+    width: 12.25%;
+    padding: 10px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.confirmation {
+    width: 60%;
+    padding: 10px;
+    margin-top: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5%;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #e6e6ff;
+}
+
+.confirm-form{
+    width: 60%;
+    margin-right: 80px;
+    margin-left: auto;
+    text-align: left;
+}
+
+.confirmation.button-class{
+    width: 60%;
+}
+
+.submit-class{
+    width: 50%;
+    text-align: left;
+}
+.cancel-class{
+    width: 50%;
+    text-align: right;
+}
+
+.input-confirm{
+    width: 100%;
+    background-color: #33322b;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*for 3 column layout*/
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 20px;
+}
+
+/*for 2 columns layout*/
+.exhibit-container {
+    margin: 0px 20px;
+}
+
+header {
+    padding: 0px;
+    margin: 0px;
+    background-color: #33322b;
+    color: #fffcf5;
+}
+
+div.first {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 15px;
+    margin: 0px 0px 0px -10px;
+}
+
+div.fir image {
+    color: #808080;
+}
+
+section {
+    margin: 0px;
+}
+
+p {
+    margin: 0px 15px 15px 0px;
+}
+
+h1 {
+    font-size: 36pt;
+    font-weight: bold;
+    color: #fffcf5;
+    font-family: "Palatino Linotype", "Times New Roman", serif;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 20pt;
+    font-weight: bold;
+    Color: #000000;
+    font-family: "Palatino Linotype", "Times New Roman", serif;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 16pt;
+    Color: #36342d;
+    font-family: "Palatino Linotype", "Times New Roman", serif;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+img {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Main Content Link Styles */
+
+a:link, a:visited {
+    color: #321259;
+}
+
+a:hover, a:active {
+    color: #fffcf5;
+    background-color: #36342d;
+    text-decoration: none;
+}
+
+div.row {
+    display: flex;
+}
+
+div.column {
+    width: 50%;
+    padding: 10px;
+}
+
+div.img-with-text {
+    width: 100%;
+    text-align: justify;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/* 3 column styles */
+
+.column3_1 {
+    float: left;
+    width: 33%;
+    padding: 15px;
+    border-right: 2px solid #321259;
+}
+
+.column3_2 {
+    float: left;
+    width: 33%;
+    padding: 15px;
+}
+
+.column3_3 {
+    float: left;
+    width: 33%;
+    padding: 15px;
+    border-left: 2px solid #321259;
+}
+
+/* 2 column styles */
+
+.column2_1 {
+    float: left;
+    width: 75%;
+    padding: 15px;
+    border-right: 2px solid #321259;
+}
+
+aside {
+    float: left;
+    width: 23%;
+    padding: 15px;
+}
+
+column_event {
+    float: left;
+    width: 25%;
+    padding: 15px;
+}
+.container {
+    
+   margin: 30px;
+}
+
+/* Navigation Styles */
+
+ul.HNav1 {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px 20px;
+    overflow: hidden;
+    background-color: #d9bd1c;
+    color: #fffcf5;
+    border-top: 2px solid #d9bd1c;
+}
+
+    ul.HNav1 li {
+        margin: 0px;
+        line-height: 2em;
+        display: inline-block;
+        text-align: center;
+    }
+
+    ul.HNav1 a:link, ul.HNav1 a:visited {
+        padding: 0px 15px;
+        color: #fffcf5;
+        text-decoration: none;
+    }
+
+    ul.HNav1 a:hover, ul.HNav1 a:active {
+        padding: 0px 15px;
+        color: #321259;
+        background-color: #d9bd1c;
+        text-decoration: none;
+    }
+
+
+/*
+Images and Floats
+*/
+.clrflt {
+    clear: both;
+}
+
+.fltrght {
+    float: right;
+    margin: 10px;
+}
+
+.fltleft {
+    float: left;
+    margin: 10px;
+}
+
+.lightimg {
+    border: 1pt solid black;
+}
+
+/*float image to left*/
+.fltimglft {
+    float: left;
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-left: 5px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+/*float image to right*/
+.fltimgrght {
+    float: right;
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+
+.fltimgnone {
+    float: none;
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.img-class {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+div.text-class {
+    margin: 10px;
+    text-align: justify;
+}
+/* Footer Styles */
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 9em;
+    text-align: Left;
+    background-color: #33322b;
+    color: #fffcf5;
+    padding: 20px;
+    margin: 0px;
+}
+
+    /*set color when link is visited*/
+    footer a:link, footer a:visited {
+        color: #fffcf5;
+    }
+
+    /*set color when hover*/
+    footer a:hover, footer a:active {
+        color: #321259;
+        background-color: #fffcf5;
+        text-decoration: none;
+    }
+
+/*
+Footer Button Styles
+*/
+ul.footerbuttons {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #33322b;
+    color: #fffcf5;
+}
+
+    ul.footerbuttons li {
+        padding: 0px;
+        line-height: 2em;
+        text-align: center;
+    }
+
+        ul.footerbuttons li a:link, ul.footerbuttons li a:visited {
+            color: #fffcf5;
+            text-decoration: none;
+        }
+
+        ul.footerbuttons li a:hover, ul.footerbuttons li a:active {
+            color: #321259;
+            background-color: #fffcf5;
+            text-decoration: none;
+        }
+
+/* Footer Columns */
+
+.fcolumn1 {
+    float: left;
+    width: 33%;
+    padding: 15px;
+}
+
+.fcolumn2 {
+    float: left;
+    width: 33%;
+    padding: 15px;
+}
+
+.fcolumn3 {
+    float: left;
+    width: 33%;
+    padding: 15px;
+}
